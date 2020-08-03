@@ -1,0 +1,65 @@
+/*
+    #FFFFFF  White
+    #424242  Dark
+    #1E3D70  BLUE       // Primary
+    #FBBC05  Musturd    // Secondary
+    #34A853  GREEN      // Success
+    #EA4335  Red        // Danger
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+body {
+    min-width: 380px;
+    min-height: 500px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; padding: 0 20px;
+}
+
+.left { float: left; }
+.right { float: right; }
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#header, #footer {
+    line-height: 60px;
+    background-color: #424242;
+}
+#header #logo {
+    color: #34A853; font-size: 16px;
+    font-weight: 700; text-decoration: none;
+}
+#header #logo span {
+    color: #FBBC05
+}
+#footer {
+    color: #fff;
+    text-align: center;
+}
+
+#pageContent {
+    height: calc(100% - 120px);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/* Item List */
+#item_list { padding: 20px 0 50px; }
+.item { padding: 20px; box-shadow: 2px 2px 10px rgba(0,0,0,0.4); }
+.item img { float: left; max-height: 200px; margin-right: 20px; }
+.item .description { font-weight: bold; margin-bottom: 10px; }
+.item .label { font-weight: bold; display: inline-block; width: 60px; }

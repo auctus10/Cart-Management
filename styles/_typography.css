@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+body { font-family: 'Roboto', sans-serif; }
+
+h1, h2, h3, h4 { padding: 25px 0 15px 0; font-weight: 400; }
+h1, h3 { color: #1E3D70; }
+h2, h4 { color: #FBBC05; }
+
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+p  { font-size: 14px; }
+
+@media screen and (max-width: 768px) {
+    h1 { font-size: 42px; }
+    h2 { font-size: 30px; }
+    h3 { font-size: 22px; }
+    h4 { font-size: 16px; }
+    p  { font-size: 13px; }
+}

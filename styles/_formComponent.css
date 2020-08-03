@@ -1,0 +1,39 @@
+/*==================
+    Buttons
+ ==================*/
+.button {
+    display: inline-block;
+    border: none; outline: none;
+    margin: 10px 0; padding: 0 20px;
+    background-color: #424242;
+    color: #FFFFFF; line-height: 37px;
+    font-size: 14px; text-decoration: none;
+
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    transition: 0.3s all ease-in-out;
+}
+.button:hover { box-shadow: 2px 2px 5px rgba(0,0,0,0.6); }
+.button:active { box-shadow: none; }
+.button.primary { background-color: #1E3D70; }
+.button.secondary { background-color: #FBBC05; }
+.button.success { background-color: #34A853; }
+.button.danger { background-color: #EA4335; }
+
+
+/*==================
+    Form Fields
+ ==================*/
+.formField {
+    width: 100%;
+    margin-top: 10px; padding: 5px;
+}
+.option label {
+    display: block; font-weight: 700;
+    margin-top: 10px;
+}
+.option input { display: inline-block; margin: 0 0 15px 15px; }
+.option input:first-of-type { margin-left: 0; }
+.error {
+    margin: 5px 0; font-weight: 700;
+    font-size: 13px; color: #EA4335;
+}

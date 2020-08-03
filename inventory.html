@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart Management</title>
+    <link rel="stylesheet" href="styles/_typography.css">
+    <link rel="stylesheet" href="styles/_formComponent.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a id="logo" href="index.html">
+                Cart <span>Management</span>
+            </a>
+        </div>
+    </header>
+
+
+    <div id="pageContent">
+        <div class="container">
+            <h1>Inventory</h1>
+
+            <form id="hide-form">
+                <input class="formField dataField" type="text" name="title" placeholder="Item name">
+                <textarea class="formField dataField" name="description" placeholder="Item description"></textarea>
+                <input class="formField dataField" type="text" name="imageUrl" placeholder="Item image url">
+                <select class="formField dataField" name="category" placeholder="Category">
+                    <option value="">Select category</option>
+                    <option value="Android">Android</option>
+                    <option value="iOS">iOS</option>
+                </select>
+
+                <div class="option">
+                    <label for="">Memory</label>
+                    <input class="dataField" type="radio" name="memory" value="32" checked> 32GB
+                    <input class="dataField" type="radio" name="memory" value="64"> 64GB
+                    <input class="dataField" type="radio" name="memory" value="128"> 128GB
+                </div>
+
+                <input class="formField dataField" type="text" name="price" placeholder="Price">
+
+                <input id="formSubmit" type="submit" class="button success" value="Add Item" data-func="add">
+                <input type="reset" class="button" value="Cancel">
+            </form>
+            <div id="update-form"></div>
+
+
+            <h2>Item List</h2>
+            <div id="item_list"></div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; Copyrights reserved</p>
+        </div>
+    </footer>
+
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/inventory.js"></script>
+
+</body>
+
+</html>
